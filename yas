@@ -1,0 +1,107 @@
+<html><head>
+        <title>
+            Console Web App
+        </title>
+        <style>
+            .first{
+                background-color: red;
+            }
+            body{
+                text-align: center;
+                background-color: peachpuff;
+            }
+            h1{
+                font-size: 50px;
+            }
+            p{
+             font-size: 20px;   
+            }
+            .VisualStudioCode{
+                background-color: orange;
+            }
+            .console{
+                background-color: yellow;
+            }
+            .consolegenerater{
+                background-color: green;
+            }
+            .contact{
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <section class="first">
+                <img src="ConsoleBannerPage.png" width="100%">
+                <h1>
+                    My Console Web App
+                </h1>
+                <p>
+                    This is a website where I will be telling you a little about Visual Studio Code and Cosole. We will also have a console generater. Pls check it out.
+                </p>
+            </section>
+            <section class="VisualStudioCode">
+                <h1>
+                    About Visual Studio Code
+                </h1>
+                <h2>
+                    Read a little about Visual Studio Code. 
+                </h2>
+                <p>
+                    Visual Studio Code is another browser where you can code. It is just like Visual Studio (The main browser to code websites) except it has a few different features. At its heart, Visual Studio Code <br>features a lightning fast source code editor, perfect for day-to-day use. With support for hundreds of languages, VS Code (Visual Studio Code) helps you be instantly<br> productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more. Visual Studio Code is a lightweight but powerful <br>source code editor which runs on your desktop and is available for Windows, Mac0S and Linux. <br>It comes with built-in support for JavaScript, TypeScript and Node. Thanks for reading a little about Visual Studio Code!
+                </p>
+            </section>
+            <section class="console">
+                <h1>
+                    About Console
+                </h1>
+                <h2>
+                    Read about console.
+                </h2>
+                <p>
+                    Console is a basic computer or monitor and keyboard that is connected to another computer, server, or a mainframe over a network. It is used to maintain or monitor the status of the network or computer. <br>A console is the combination of a monitor and keyboard. It is a rudimentary interface in which the monitor provides the output and the keyboard is used for input. These consoles typically include a<br> mouse for navigating graphical interfaces. ... The terms "console" and "terminal" are often used synonymously. Thanks for reading about console!
+                </p>
+            </section>
+            <section class="consolegenerater">
+                <h1>
+                    Console Generater
+                </h1>
+                <h2>
+                    This is the console generater check it out so you will get to understand more about console.
+                </h2>
+                <input type="text" placeholder="first name" id="first_name">
+                <br>
+
+                <input type="text" placeholder="last name" id="last_name">
+                <br>
+                <button onclick="submit()" id="submit_button">Submit</button>
+                <div id="display_name" style="font-weight: bold;">REHAAN JAIN</div>
+            </section>
+            <section class="contact">
+                <h1>
+                    Contact
+                </h1>
+                <p>
+                    Thanks for reading! Link to this website in other places.
+                </p>
+                <a href="https://cdpn.io/anikasonthalia/debug/jOVBvEd/VGAWNGxXZVdr">
+                    <h2>CodePen.io</h2>
+                </a>
+            </section>
+        </section>
+    
+
+<script>
+    function submit(){
+        var first_name = document.getElementById('first_name').value;
+        var last_name = document.getElementById('last_name').value;
+        console.log(first_name);
+        console.log(last_name);
+        var full_name=first_name.concat(last_name);
+        console.log(full_name);
+        document.getElementById("display_name").innerHTML=full_name;
+    }
+</script>
+</body>
+</html>
